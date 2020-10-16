@@ -17,7 +17,7 @@ touch script-4-keys.sh && chmod 777 script-4-keys.sh
 mkdir signatures/decoded
 for i in {1..32}; do openssl enc -d -base64 -in signatures/potpis$i.sign -out signatures/decoded/potpis$i.sign; done
 
-#Kreirajmo skriptu koja ce vrsi verifikaciju potpisa datoteke ulaz.txt sa svim mogucim kljucevima prolazeci kroz sve moguce sha algoritme.
+#Kreirajmo skriptu koja ce da vrsi verifikaciju potpisa datoteke ulaz.txt sa svim mogucim kljucevima prolazeci kroz sve moguce sha algoritme.
 #Pokusajmo skriptu pokrenuti nad vec postojecim javnim kljucevima. Mozda nam se posreci pa dobijemo rjesenje.
 touch script.sh && chmod 777 script.sh
 ./script.sh 2>/dev/null
