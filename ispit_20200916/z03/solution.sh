@@ -21,7 +21,7 @@ for i in {1..32}; do openssl enc -d -base64 -in signatures/potpis$i.sign -out si
 #Pokusajmo skriptu pokrenuti nad vec postojecim javnim kljucevima. Mozda nam se posreci pa dobijemo rjesenje.
 touch script.sh && chmod 777 script.sh
 ./script.sh 2>/dev/null
-#Nismo dobili rezultat. Znamo da rjesnje nije sigurno jedan od kljuceva koji su vec bili public.
+#Nismo dobili rezultat. Znamo da rjesenje nije sigurno jedan od kljuceva koji su vec bili public.
 
 #Provjerimo da li su DER formata RSA kljucevi
 for i in {1..33}; do openssl rsa -in keys/rsa/keys$i.key -noout -text -inform DER; done 
