@@ -4,3 +4,6 @@ Rjesenje rokova iz predmeta Kriptografija i računarska zaštita na Elektrotehni
 * [Ispit 07.10.2020.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/ispit_20201007)
 * [Ispit 16.09.2020.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/ispit_20200916)
 * [Ispit 02.09.2020.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/ispit_20200902)
+
+## Napomena
+Rješenja zadataka mogu sadržati greške. Sve greške možete prijaviti putem [email-a](mailto:aleksamcode@gmail.com?subject=[GitHub]).
