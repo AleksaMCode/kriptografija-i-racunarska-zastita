@@ -10,4 +10,5 @@ for i in {1..50}; do openssl pkcs12 -in p12/store$i.p12 -nocerts -out keys/key$i
 for i in {51..100}; do openssl pkcs12 -in p12/store$i.p12 -nocerts -out keys/key$i.enc -passin pass:sigurnost -passout pass:sigurnost; done 2>/dev/null &
 #Dekriptujmo enkriptovane RSA kljuceve.
 for i in {1..100}; do openssl rsa -in keys/key$i.enc -out keys/key$i.der -outform der -passin pass:sigurnost && rm keys/key$i.enc; done 2>/dev/null
+#Pronadjimo match.
 for i in {1..100}; do if [[ "$(diff keys/key$i.der kljuc.key | awk 'NR=1')" == "" ]]; then echo "MATCH: key$i" && break; fi; done
