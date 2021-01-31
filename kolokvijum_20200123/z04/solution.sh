@@ -72,7 +72,7 @@ openssl ca -revoke certs/c3.cer -crl_reason affiliationChanged -config openssl.c
 echo 06 > crlnumber
 openssl ca -gencrl -out crl/lista1.crl -config openssl.cnf -days 59
 
-#kriranje lista2.crl datoteke
+#Kreiranje datoteke lista2.crl.
 echo ed > crlnumber 
 openssl ca -gencrl -out crl/lista2.crl -config openssl.cnf -days 262 # 8x60+22=262, datum je generisan od datuma odrzavanja ispita.
 
