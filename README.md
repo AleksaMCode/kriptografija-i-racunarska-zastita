@@ -11,6 +11,7 @@ Rješenje rokova iz predmeta *Kriptografija i računarska zaštita* na Elektrote
 * [2. kol. 23.01.2020.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/kolokvijum_20200123)
 * [2. kol. 25.01.2019.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/kolokvijum_20190125)
 * [2. kol. 18.01.2018.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/kolokvijum_20180118)
+* [2. kol. 18.01.2017.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/kolokvijum_20170118)
 
 ## Napomena
 Rješenja zadataka mogu sadržati greške. Sve greške možete prijaviti putem [email-a](mailto:aleksamcode@gmail.com?subject=[GitHub-Kriptografija-rjesenja-ispita-greska]).
