@@ -15,6 +15,7 @@ touch script.sh && chmod +x script.sh
 ./script.sh 2>/dev/null
 #Dobili smo listu odgovarajucih algoritama - algos.txt
 #Napisimo skriptu koja ce pokusati dekriptovati izlaz.txt
+mkdir ulazi/
 touch script-decrypt.sh && chmod +x script-decrypt.sh
-./script-decrypt.sh
-#Rjesenje je vjerovatno idea ili idea-cfb, ali kako je taj algoritam izbacen iz verzije 1.1.1 skripta ne daje rjesenje.
+./script-decrypt.sh 2>/dev/null
+#Rjesenje je dobijeno sa aes-256-cbc. U dekriptovanoj datoteci stoji "Uspjesno ste dekriptovali sifrat."
