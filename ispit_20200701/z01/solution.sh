@@ -2,7 +2,7 @@
 mkdir ulazi && mv ulaz*.txt ulazi/
 #Dekodujmo otisak.hash iz base64 formata.
 openssl enc -d -base64 -in otisak.hash -out otisak.txt
-#Napravimo listu svih algoritama koji se mogu koristiti sa gdst komandom u openssl-u.
+#Napravimo listu svih algoritama koji se mogu koristiti sa dgst komandom u openssl-u.
 openssl list --digest-commands | tr -s " " "\n" > dgst.algos
 #Kreirajmo skriptu koja ce da kreirao otisak i da ga provjerava sa datim otiskom.
 touch script.sh && chmod 777 script.sh
