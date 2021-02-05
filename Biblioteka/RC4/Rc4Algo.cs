@@ -13,7 +13,7 @@ namespace RC4algo
         private int[] S { get; set; }
 
         /// <summary>
-        /// Kljuc promjenlijve duzine, od 1 do 256 B.
+        /// Kljuc promjenljive duzine, od 1 do 256 B.
         /// </summary>
         private int[] Key { get; set; }
 
