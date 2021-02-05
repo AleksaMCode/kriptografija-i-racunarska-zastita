@@ -31,7 +31,7 @@ Neka je dat ključ u ASCII formatu kao <b>28221002</b> i neka je dužina vektora
 int[] key = { '2', '8', '2', '2', '1', '0', '0', '2' };
 var rc4 = new Rc4Algo(key);
 string opentext = "ACAA";
-int stateVectorLen = 56 / 8; # konvertovanje bita u bajtove
+int stateVectorLen = 56 / 8; // konvertovanje bita u bajtove
 rc4.Encrypt(stateVectorLen, opentext);
 ```
 - Primjer korištenja klase <i>Rc4Algo</i> za enkripciju ulaznog teksta <b>ACAA</b> koji je data u `hex` formatu, tj. kao `0xacaa`.
@@ -39,14 +39,14 @@ rc4.Encrypt(stateVectorLen, opentext);
 int[] key = { '2', '8', '2', '2', '1', '0', '0', '2' };
 var rc4 = new Rc4Algo(key);
 int[] opentextInHex = { 0xac, 0xaa };
-int stateVectorLen = 56 / 8; # konvertovanje bita u bajtove
+int stateVectorLen = 56 / 8; // konvertovanje bita u bajtove
 rc4.Encrypt(stateVectorLen, opentextInHex);
 ```
 - Primjer korištenja klase <i>Rc4Algo</i> kada zadatak samo traži da se izračuna vektor stanja za ulazne parametre.
 ```C#
 int[] key = { '2', '8', '2', '2', '1', '0', '0', '2' };
 var rc4 = new Rc4Algo(key);
-int stateVectorLen = 56 / 8; # konvertovanje bita u bajtove
+int stateVectorLen = 56 / 8; // konvertovanje bita u bajtove
 rc4.OnlyKSA(stateVectorLen);
 ```
 
