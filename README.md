@@ -20,7 +20,7 @@ Rješenje rokova iz predmeta *Kriptografija i računarska zaštita* na Elektrote
 ## Biblioteka algoritama
 <p align="justify">Implementacija algoritama koji dolaze na prvom dijelu ispita, u <b>C#</b>, sa ciljem automatizacije i ubrzavanja procesa rješavanja takvih zadataka.</p>
 <ol>
-    <li><a href="./Biblioteka">RC4</a></li>
+    <li><a href="./Biblioteka/RC4/Rc4Algo.cs">RC4</a></li>
 </ol>
 
 ### RC4
