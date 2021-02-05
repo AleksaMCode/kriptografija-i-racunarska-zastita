@@ -17,5 +17,36 @@ Rješenje rokova iz predmeta *Kriptografija i računarska zaštita* na Elektrote
 * [2. kol. 18.01.2018.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/kolokvijum_20180118)
 * [2. kol. 18.01.2017.](https://github.com/AleksaMCode/kriptografija-i-racunarska-zastita/tree/main/kolokvijum_20170118)
 
+## Biblioteka algoritama
+<p align="justify">Implementacija algoritama koji dolaze na prvom dijelu ispita, u <b>C#</b>, sa ciljem automatizacije i ubrzavanja procesa rješavanja takvih zadataka.</p>
+<ol>
+    <li><a href="./Biblioteka">RC4</a></li>
+</ol>
+
+### RC4
+Primjer koristenja klase <i>Rc4Algo</i> za enkripciju ulaznog teksta koji je data u `string` formatu.
+```C#
+int[] key = { '2', '8', '1', '2', '2', '0', '2', '0' };
+var rc4 = new Rc4Algo(key);
+string opentext = "ACDB";
+int stateVectorLen = 56 / 8;
+rc4.Encrypt(stateVectorLen, plaintext);
+```
+Primjer koristenja klase <i>Rc4Algo</i> za enkripciju ulaznog teksta koji je data u `hex` formatu.
+```C#
+int[] key = { '2', '8', '1', '2', '2', '0', '2', '0' };
+var rc4 = new Rc4Algo(key);
+int[] opentextInHex = { 0xac, 0xdb };
+int stateVectorLen = 56 / 8;
+rc4.Encrypt(stateVectorLen, opentextInHex);
+```
+Primjer koristenja klase <i>Rc4Algo</i> kada zadatak samo traži da se izračuna vektor stanja za ulazne parametre.
+```C#
+int[] key = { '2', '8', '1', '2', '2', '0', '2', '0' };
+var rc4 = new Rc4Algo(key);
+int stateVectorLen = 56 / 8;
+rc4.OnlyKSA(stateVectorLen);
+```
+
 ## Napomena
 Rješenja zadataka mogu sadržati greške. Sve greške možete prijaviti putem [email-a](mailto:aleksamcode@gmail.com?subject=[GitHub-Kriptografija-rjesenja-ispita-greska]).
