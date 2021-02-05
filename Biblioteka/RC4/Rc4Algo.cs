@@ -23,13 +23,21 @@ namespace RC4algo
         /// </summary>
         private int[] Result { get; set; }
 
+        /// <summary>
+        /// Konstruktor od <see cref="Rc4Algo"/> koji prihvata kljuc.
+        /// </summary>
+        /// <param name="key"></param>
         public Rc4Algo(int[] key)
         {
-            this.Key = key;
+            if (key.Length > 255)
+            {
+                Array.Resize<int>(ref key, 255);
+            }
+            Key = key;
         }
 
         /// <summary>
-        /// Enkripcija koristenjem <em>opentext</em>-a u u <see cref="string"/> formatu. KSA + PRGA faze.
+        /// Enkripcija koristenjem <em>opentext</em>-a u <see cref="string"/> formatu. KSA + PRGA faze.
         /// </summary>
         /// <param name="stateVectorLen">Velicina vektora stanja u bajtovima.</param>
         /// <param name="plaintext">Neenkriptovani ulazni podaci.</param>
