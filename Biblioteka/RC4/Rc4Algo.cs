@@ -101,7 +101,7 @@ namespace RC4algo
         {
             if (stateVectorLen >= 255)
             {
-                stateVectorLen = 255;
+                stateVectorLen = 254;
             }
 
             // KSA prva faza - niz S inicijalizuje vrijednostima od 0 do stateVectorLen u rastućem poretku
